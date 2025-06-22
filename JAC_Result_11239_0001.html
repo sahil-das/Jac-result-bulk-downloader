@@ -1,0 +1,763 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>
+	Home | Jharkhand Academic Council
+</title><link href="resources/css/bootstrap.min.css" rel="stylesheet" /><link href="resources/css/style.css" rel="stylesheet" /><link href="resources/css/responsive.css" rel="stylesheet" /><link href="resources/css/all.min.css" rel="stylesheet" /><link href="resources/css/fontawesome.min.css" rel="stylesheet" /><link href="resources/css/owl.carousel.min.css" rel="stylesheet" /><link href="resources/css/owl.theme.default.min.css" rel="stylesheet" /><link href="resources/css/lightbox.min.css" rel="stylesheet" /><link rel="apple-touch-icon" sizes="180x180" href="resources/images/logo2.png" /><link rel="icon" type="image/png" sizes="32x32" href="resources/images/logo2.png" /><link rel="icon" type="image/png" sizes="16x16" href="resources/images/logo2.png" /><link rel="manifest" href="resources/images/faviconn/site.webmanifest" /><meta name="msapplication-TileColor" content="#da532c" /><meta name="theme-color" content="#ffffff" /><meta http-equiv="X-XSS-Protection" content="1; mode=block" /><meta http-equiv="X-Content-Type-Options" content="nosniff" /><meta http-equiv="X-Frame-Options" content="DENY" />
+    <script src="resources/js/jquery.min.js"></script>
+    <script src="resources/js/bootstrap.bundle.min.js"></script>
+    <script src="resources/js/owl.carousel.js"></script>
+    <script src="resources/js/lightbox.min.js"></script>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(function () {
+            var height = $(window).height();
+            var width = $(window).width();
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $(".mainmenusec").addClass('headerbar');
+
+                }
+                else {
+                    $(".mainmenusec").removeClass('headerbar');
+                }
+
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            var owl = $('#banowl');
+            owl.owlCarousel({
+                margin: 10,
+                nav: true,
+                loop: true,
+                autoplay: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            })
+        })
+    </script>
+    <script>
+        $('#v1, #v2').owlCarousel({
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            items: 1,
+            nav: true,
+            animateOut: 'slideOutUp',
+            animateIn: 'slideInUp'
+        })
+    </script>
+    <script>
+        $('#blackButton').click(switchBlack);
+        $('#whiteButton').click(switchWhite);
+        function switchBlack() {
+            $('body').attr('class', 'black');
+        }
+
+        function switchWhite() {
+            $('body').attr('class', 'white');
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            var resize = new Array('.resizable');
+            resize = resize.join(',');
+
+            //resets the font size when "reset" is clicked
+            var resetFont = $(resize).css('font-size');
+            $(".reset").click(function () {
+                $(resize).css('font-size', resetFont);
+            });
+
+            //increases font size when "+" is clicked
+            $(".increase").click(function () {
+                var originalFontSize = $(resize).css('font-size');
+                var originalFontNumber = parseFloat(originalFontSize, 10);
+                var newFontSize = originalFontNumber * 1.2;
+                $(resize).css('font-size', newFontSize);
+                return false;
+            });
+
+            //decrease font size when "-" is clicked
+
+            $(".decrease").click(function () {
+                var originalFontSize = $(resize).css('font-size');
+                var originalFontNumber = parseFloat(originalFontSize, 10);
+                var newFontSize = originalFontNumber * 0.8;
+                $(resize).css('font-size', newFontSize);
+                return false;
+            });
+
+        });
+    </script>
+    <script>
+        $('#photogal').owlCarousel({
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 2
+                }
+            }
+        })
+    </script>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+    </style>
+    
+</head>
+<body>
+    <form method="post" action="./view-class-x-2025-result" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="A+sgGu9fy5eE5Yz0zWfIHeWzjemQo3ffCmfu8RU8D8R0jXHSvYOTzdPc20kHcz261EoXJTQpr1yMsQXxcL9KftjhjTIhMxyXFjjTFZRVygSND8u+2LYfhR6j82On3YuhLvUHZkCRzWku3OnVWC+aNe7fkRZvDS/nxx/+aAITZXevqCSEcEsYW85Jb144Wh3/HPO9WVesWnmz3go6D97au1xR+i92oMwZqJl8iaFb27JIwcq/NWCpZlBxJKwzBsTqIbrko+Chx498iw60MWJSnSkB0PkQwWY8Xv6+AWmH6bzUplPH/jO6m/6I6lh7oEoJg8KVckC9/Dt9advEfA9KkhiuBTCBn6bg0oEiY2VLO1RRrV09So2RNOppPCtnoHWNv0EWYf5TRXMWIvegFxhSiDjjotHu8AfLXGEI8mEFcJx66jfMktXLfQukthQ87RTG721T60s9DRD5F7t0xqGJZgK/15EwW/4wrr01v/hB1Y/HJfB6fUhD6+5/UqWX9MCkq5Bk0r2vmihCE16LNL0J+3u1Ag+ggqL7jMo0g1e0n5Dq2iXQap2XX8i9PAkIGGG3ugHray1yt5JXYscCwStkuZ2tGmfRXsa84fKdAuM8Mal4N7wRma8Hq76D5B245SHbwjpCQJ9OdvESefudL3aMXmDrlndobJc4+jWcOPXDlgLcWqn9c8Zglz8LBhbdCs5xeq0M7sRYsMEmBGcObLYufw+5ZP/Tnmo27K2hXDdq+d96VWtHIr4WMtUBWHGMYYpsst8yVsv6VpCgHoYh6KI8kKp4MBzoiNklT+qch0qZNwEBxBnnHOC/37C5NAfTVAUDEcPQWheHJov2QAwTfAx3V80yLCUuOAAD5kNtiw6UZMobJnExVP/PtbmOA9qRe/ka+gKZ1PDPacjWC60+9rq+jlUB/g7sTPUdyyTOgYRbRBsE/CnZkBGbWjGnkXbvIysPSUGpulCTwaBnhJA3Vj2Ox1EEJuzm2Sjfnt20k6v+WCoyQJwPTSrGAAjpNj8Pg4uDks5rNR8EWXI/r0+RrOUWb97/jPr3bVcivrjaiqF6XCDx0RHcYRGipYxQNwKus29k97ToZAmIAS4fCHDwYjxsamTBWEDobhG8NLyG4R0gFNuSUBe8+krWStBu4sweDEQczo/ymRtrTSv+DOXEJQ1SOO5TSSMYcyg6rOYk0wtRMizUVvVLb5VmhME1Erz5INfdvyybMlZqSywWFHdnmfblixUoFtteSUhiyYc4fteXoFg=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="5646A98A" />
+        <nav class="topsec navbar navbar-expand-lg padding-nav padding-none striptop">
+            <div class="collapse navbar-collapse justify-space-between d-flex justify-space-between-md d-flex-md d-flex-sm" id="navbarSupportedContent">
+
+                <a class="uplogec d-flex gap-2 align-items-center" target="_blank" href="https://www.jharkhand.gov.in/">
+                     <img src="resources/images/Jharkhand_Rajakiya_Chihna.png" class="jac-logo">
+                    <h6 class="text-uppercase mb-lg-0 government-text" style=" color: white;margin-bottom:0px">Government
+                        of
+                        Jharkhand |
+                        Jharkhand Academic Council</h6>
+                </a>
+
+                <div class="form-inline my-2 my-lg-0">
+                    <ul class="gap-2 navbar-nav mr-auto">
+                        <li class="nav-item align-center d-flex ">
+                            <a class="nav-link link-dark screen-text" style="color:white" href="/">Skip to Main Content</a>
+                        </li>
+                        <li class="nav-item align-center d-flex ">
+                            <a class="nav-link link-dark screen-text"  href="screen-reader.html"><i class="fa fa-volume-up me-1 volume-icon" style="color: white;"></i>Screen Reader
+                                Access</a>
+                        </li>
+                        <li class="nav-item align-center d-flex ">
+                            <a class="nav-link bg-black text-white" style="padding-top: 4px; padding-bottom: 4px; display: block;" href="#" id="blackbutton">A
+                            </a>
+                            <a class="nav-link bg-white text-black" style="padding-top: 4px; padding-bottom: 4px; display: none;" href="#" id="whitebutton">A
+                            </a>
+                        </li>
+                        <li class="nav-item align-center d-flex">
+                            <a class="nav-link" href="#" id="up">A+</a>
+                            <a class="nav-link" href="#" id="down">A-</a>
+                            <a class="nav-link" href="#" id="default">A</a>
+                        </li>
+
+                        <li class="nav-item align-center d-flex">
+                            <a class="gap-1 d-flex nav-link link-dark screen-text" href="#">
+                                <i class="fa fa-language" style="font-size: 16px; transition: transform 0.3s;color:white"></i>
+                                <span id="language-text" style="color:white">English</span>
+                            </a>
+                        </li>
+                        <li class="nav-item align-center d-flex">
+                            <a class="nav-link" href="#" style="font-size: 15px;"><i class="fa-brands fa-square-facebook link-logo"></i></a>
+                            <a class="nav-link" href="#" style="font-size: 15px;"><i class="fa-brands fa-square-twitter link-logo"></i></a>
+                            <a class="nav-link" href="#" style="font-size: 15px;"><i class="fab fa-instagram link-logo"></i></a>
+                            <a class="nav-link" href="#" style="font-size: 15px;"><i class="fa-brands fa-square-youtube link-logo"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </nav>
+        <div class="bodydiv bodydiv2">
+            <div class="row mainrow">
+                <div class="col-md-2 col-sm-2 logocontain">
+                    <a href="/">
+                        <img src="resources/images/jac-logo-brown.png" class="logo width-logo-sm width-logo-xss width-logo-xs padd-12 pr-0" /></a>
+                </div>
+                <div class="col-md-8 col-sm-8 fullwidth">
+                    <div class="titlecontainer titlecontainer2 titlecontainer3">
+                        <h4 class="title title2 title3 title4">
+                            <span id="Label1">JHARKHAND ACADEMIC COUNCIL, RANCHI</span>
+                        </h4>
+                        <h5 class="address address2 address3 address4">
+                            <span id="lblheader1"> Gyandeep Campus, Bargawan, Namkum, Ranchi - 834010</span>
+                        </h5>
+                        <h5 class="tag tag2 tag3 tag4">
+                            <span id="lblheader2">Annual Secondary Examination -2025</span>
+                        </h5>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                </div>
+            </div>
+        </div>
+        <div>
+            <nav class="navbar navbar-expand-lg padding-nav striptop" style="background-color: #800000;">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                          
+                           
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div style="height: 5px; background-color: #FFBC79;" class="navbottomstrip"></div>
+        <div class="homeannounce pt-3 pb-4 bodycontainer bodycontainer2 bodycontainer3" style="margin-bottom:70px">
+            <div class="container">
+                
+     <style>
+     @media print {
+         body * {
+             visibility: hidden !important;
+         }
+
+         #printArea, #printArea * {
+             visibility: visible !important;
+         }
+
+         #printArea {
+             position: absolute;
+             left: 0;
+             top: 0;
+             width: 100vw;
+             background: white;
+             z-index: 9999;
+         }
+
+         .no-print {
+             display: none !important;
+         }
+        
+     }
+ </style>
+    <div class="row" id="printArea" style="width: 210mm; height: 297mm; display: block">
+        <div class="row">
+            <table style="width: 100%; justify-content: center; margin: 25px 0px;">
+                <tbody>
+                    <tr>
+                        <td style="width: 7%;">
+                            <img src="jac-academic-council.png" style="height: 70px; margin-left: 50px;">
+                        </td>
+                        <td>
+                            <div style="margin-left: -70px;">
+                                <p style="font-size: 22px; text-align: center; font-family: 'Times New Roman', Times, serif; font-weight: 600; color:black !important">JHARKHAND ACADEMIC COUNCIL, RANCHI</p>
+                                <p style="font-size: 18px; text-align: center; font-family: 'Times New Roman', Times, serif; color:black !important">Results of</p>
+                                <p style="font-size: 18px; text-align: center; font-family: 'Times New Roman', Times, serif; color:black !important">Annual Secondary Examination - 2025</p>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="margin-left: 40px; margin-right: 40px;">
+                <div style="border: 2px solid black; padding: 15px 20px 20px 10px;">
+                    <table style="width: 100%; margin-left: 40px; font-size: 14px; margin-top: 10px; color:black">
+                        <tr>
+                            <td style="width: 25%; padding-bottom: 10px;">Roll Code </td>
+                            <td style="padding-bottom: 10px; font-weight: 600;">
+                                <span id="ContentPlaceHolder1_lblrollcode">11239</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 25%; padding-bottom: 10px; color:black !important">Roll Number </td>
+                            <td style="padding-bottom: 10px; font-weight: 600; color:black !important">
+                                <span id="ContentPlaceHolder1_lblrollno">0001</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 25%; padding-bottom: 10px; color:black !important; " >Student's Name </td>
+                            <td style="padding-bottom: 10px; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lblstudentname">AFREEN NISHA                  </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 25%; padding-bottom: 10px; color:black !important;">Father's Name </td>
+                            <td style="padding-bottom: 10px; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lblfather">SHAHABUDDIN ANSARI            </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 25%; padding-bottom: 10px; color:black !important;">Mother's Name </td>
+                            <td style="padding-bottom: 10px; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lblmother">JUMERA KHATUN                 </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 25%; padding-bottom: 10px; color:black !important;">School Name</td>
+                            <td style="padding-bottom: 10px; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lblschoolname">ST XAVIER'S HIGH SCHOOL BUNDU                </span>
+                            </td>
+                        </tr>
+                    </table>
+                    <table
+                        style="width: 92%; border-collapse: collapse; margin-left: 40px; border: 1px solid black; font-size: 14px;">
+                        <tr>
+                            <td style="padding: 5px; border: 1px solid black; color:black !important;">Subject Code</td>
+                            <td style="padding: 5px; border: 1px solid black; color:black !important;">Theory</td>
+                            <td style="padding: 5px; border: 1px solid black; color:black !important;">Prac./Ass./CCE</td>
+                            <td style="padding: 5px; border: 1px solid black; color:black !important;">Total</td>
+                            <td style="padding: 5px; border: 1px solid black; color:black !important;">Grade</td>
+                            <td style="padding: 5px; border: 1px solid black; color:black !important;">Remarks</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lbllang1">HNA</span>
+                            </td>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lbllang1th">068</span>
+                            </td>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lbllang1pr">020</span>
+                            </td>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lbllang1total">088</span>
+                            </td>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lbllang1grade">A+</span>
+                            </td>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lbllang1remarks"> </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lbllang2">SNK</span>
+                            </td>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lbllang2th">067</span>
+                            </td>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lbllang2pr">020</span>
+                            </td>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lbllang2total">087</span>
+                            </td>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lbllang2grade">A+</span>
+                            </td>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lbllang2remarks">#</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lblcompl1">MTH</span>
+                            </td>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lblcompl1th">066</span>
+                            </td>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lblcompl1pr">020</span>
+                            </td>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lblcompl1total">086</span>
+                            </td>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lblcompl1grade">A+</span>
+                            </td>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lblcompl1remarks"> </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lblcompl2">SCI</span>
+                            </td>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lblcompl2th">068</span>
+                            </td>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lblcompl2pr">020</span>
+                            </td>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lblcompl2total">088</span>
+                            </td>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lblcompl2grade">A+</span>
+                            </td>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lblcompl2remarks"> </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lblcompl3">SOC</span>
+                            </td>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lblcompl3th">070</span>
+                            </td>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lblcompl3pr">020</span>
+                            </td>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lblcompl3total">090</span>
+                            </td>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lblcompl3grade">A+</span>
+                            </td>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lblcompl3remarks"> </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lblcompl4">ENG</span>
+                            </td>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lblcompl4th">064</span>
+                            </td>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lblcompl4pr">020</span>
+                            </td>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lblcompl4total">084</span>
+                            </td>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lblcompl4grade">A+</span>
+                            </td>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lblcompl4remarks">#</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: bold; color:black !important;">Total Obt.
+                                Marks</td>
+                            <td colspan="5" style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lbltotalobt">439</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: bold; color:black !important;">Result
+                            </td>
+                            <td colspan="5" style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lbldivision">FIRST DIV.        </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px; border: 1px solid black; font-weight: bold; color:black !important;">Marks
+                                Percentage</td>
+                            <td colspan="5" style="padding: 5px; border: 1px solid black; font-weight: 600; color:black !important;">
+                                <span id="ContentPlaceHolder1_lblpercentage"> 87.80</span>
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="font-size: 14px; margin-top: 20px; margin-left: 10px;">
+                        <strong style="color:black !important;">NOTE :</strong>
+                        <ol style="margin: 5px 0 0 20px; padding-left: 0;">
+                            <li style="margin-bottom: 4px; color:black !important;">"#" mark in column remarks indicates swapping between the subjects.
+                            </li>
+                            <li style="color:black !important;">Total Obtained Marks, Result &amp; Marks Percentage is out of Total Marks of 500 (best 5
+                                subjects.)
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <table style="width: 100%; margin-top: 2px;">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div style="margin-top: 25px; font-size: 13px; font-weight: 500; text-align: justify; color:black !important;">
+                                    <b>Disclaimer</b> : This marksheet is digitally generated and intended solely for immediate information to the candidate. The Jharkhand Academic Council, Ranchi shall NOT be held responsible for any inadvertent error that may have crept into the results being published online. The original marksheet issued by the Jharkhand Academic Council, Ranchi shall be treated as the authentic and final record for all official purposes.
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row no-print" style="text-align: center">
+            <a href="#" style="padding: 10px; border: 1px double #000; width: 91px; margin: 0 auto; text-transform: uppercase; border-radius: 17px; background: #46b8da; text-decoration: none; color: white; font-weight: bold;"
+                onclick="window.print(); return false;">Print</a>
+        </div>
+    </div>
+    <script>
+        function openPopup(e, url) {
+            e.preventDefault();
+            window.open(url, 'PrintWindow', 'height=1000,width=700,scrollbars=1');
+        }
+    </script>
+
+            </div>
+        </div>
+        <footer>
+            <div class="copysec" style="background-color: #FFBC79;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <div class="mb-0">
+                                <h6 style="font-weight: 600;" class="footertext1">
+                                    Note : <a class="jac-link"
+                                        href="#" style="color:white">Jharkhand Academic Council</a>, Ranchi is not
+							responsible for any inadvertent error that may have crept in the results being published
+							on NET. The results published on net are for immediate information to the
+							examinees.These cannot be treated as original marksheets. Original marksheets have been
+							issued by the Council separately.</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="linksec pt-2 pb-2">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-8 col-sm-8">
+                        <h6 class="text-white mb-0 footertextbottom">
+                            Copyright © 2025. All Rights Reserved - <span class="text-dark jactext"><strong class="jactextnew">Jharkhand Academic
+                                    Council.</strong></span>
+                        </h6>
+                    </div>
+                    <div class="col-lg-6 col-md-4 col-sm-4 text-right">
+                        <ul class="list-inline mb-0 footinfo text-lg-end">
+                            <li class="list-inline-item "><a href="#" class="footertext2 lastupdate">Last Updated On : 27-05-2025 |
+                                    11:30</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </footer>
+    </form>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const numberInputs = document.querySelectorAll(".number-only");
+
+            numberInputs.forEach(input => {
+                input.addEventListener("input", function () {
+                    this.value = this.value.replace(/[^0-9]/g, '');
+                });
+            });
+        });
+        const languageText = document.getElementById('language-text');
+        const languageIcon = document.querySelector('.fa-language');
+
+
+        languageText.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            if (languageText.textContent.trim() === "English") {
+                languageText.textContent = "हिंदी";
+                languageIcon.style.transform = "scaleX(-1)";
+            } else {
+                languageText.textContent = "English";
+                languageIcon.style.transform = "scaleX(+1)";
+            }
+        });
+        function getSize() {
+            size = parseInt($("h5").css("font-size"), 10);
+            size2 = parseInt($("h2").css("font-size"), 10);
+            size3 = parseInt($("h3").css("font-size"), 10);
+            sizep = parseInt($("p").css("font-size"), 10);
+            size6 = parseInt($("h6").css("font-size"), 10);
+            sizespan = parseInt($("span").css("font-size"), 10);
+            sizeli = parseInt($("li").css("font-size"), 10);
+            sizea = parseInt($("li").css("font-size"), 10);
+            $("#font-size").text(size); // Example display
+        }
+
+        getSize();
+
+        let upClickCount = 0;
+        let downClickCount = 0;
+        const maxClicks = 3;
+
+        // Increase font size
+        $("#up").on("click", function () {
+            if (upClickCount < maxClicks) {
+                if ((size + 2) <= 50) {
+                    $("h5").css("font-size", "+=2");
+                    $("#font-size").text(size += 2);
+                }
+                if ((sizea + 2) <= 50) {
+                    $("a").css("font-size", "+=2");
+                    $("#font-size").text(sizea += 2);
+                }
+                if ((size2 + 2) <= 50) {
+                    $("h2").css("font-size", "+=2");
+                    $("#font-size").text(size2 += 2);
+                }
+                if ((size3 + 2) <= 50) {
+                    $("h3").css("font-size", "+=2");
+                    $("#font-size").text(size3 += 2);
+                }
+                if ((sizep + 2) <= 50) {
+                    $("p").css("font-size", "+=2");
+                    $("#font-size").text(sizep += 2);
+                }
+                if ((size6 + 2) <= 50) {
+                    $("h6").css("font-size", "+=2");
+                    $("#font-size").text(size6 += 2);
+                }
+                if ((sizespan + 2) <= 50) {
+                    $("span").css("font-size", "+=2");
+                    $("#font-size").text(sizespan += 2);
+                }
+                if ((sizeli + 2) <= 50) {
+                    $("li").css("font-size", "+=2");
+                    $("#font-size").text(sizeli += 2);
+                }
+
+                upClickCount++;
+                if (upClickCount >= maxClicks) {
+                    $("#up").prop("disabled", true);
+                }
+            }
+        });
+
+        // Decrease font size
+        $("#down").on("click", function () {
+            if (downClickCount < maxClicks) {
+                if ((size - 2) >= 12) {
+                    $("h5").css("font-size", "-=2");
+                    $("#font-size").text(size -= 2);
+                }
+                if ((sizea - 2) >= 12) {
+                    $("a").css("font-size", "-=2");
+                    $("#font-size").text(sizea -= 2);
+                }
+                if ((size2 - 2) >= 12) {
+                    $("h2").css("font-size", "-=2");
+                    $("#font-size").text(size2 -= 2);
+                }
+                if ((size3 - 2) >= 12) {
+                    $("h3").css("font-size", "-=2");
+                    $("#font-size").text(size3 -= 2);
+                }
+                if ((sizep - 2) >= 12) {
+                    $("p").css("font-size", "-=2");
+                    $("#font-size").text(sizep -= 2);
+                }
+                if ((size6 - 2) >= 12) {
+                    $("h6").css("font-size", "-=2");
+                    $("#font-size").text(size6 -= 2);
+                }
+                if ((sizespan - 2) >= 12) {
+                    $("span").css("font-size", "-=2");
+                    $("#font-size").text(sizespan -= 2);
+                }
+                if ((sizeli - 2) >= 12) {
+                    $("li").css("font-size", "-=2");
+                    $("#font-size").text(sizeli -= 2);
+                }
+
+                downClickCount++;
+                if (downClickCount >= maxClicks) {
+                    $("#down").prop("disabled", true);
+                }
+            }
+        });
+
+        // Reset to default
+        $("#default").on("click", function () {
+            $("h5, h2, h6, span, li, a, p").css("font-size", "");
+            $("#font-size").text("Reset to default sizes");
+
+            // Reset click counts and enable buttons
+            upClickCount = 0;
+            downClickCount = 0;
+            $("#up, #down").prop("disabled", false);
+        });
+        const blackButton = document.getElementById('blackbutton');
+        const whiteButton = document.getElementById('whitebutton');
+
+        blackButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            blackButton.style.display = 'none';
+            whiteButton.style.display = 'block';
+        });
+
+        whiteButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            whiteButton.style.display = 'none';
+            blackButton.style.display = 'block';
+        });
+        $('#blackbutton').on('click', function () {
+            $(".striptop").css('background', 'black');
+            $(".bodydiv2").css('background', 'white');
+            $("#Label1").css('color', 'black');
+            $(".address").css('color', 'black');
+            $(".tag").css('color', 'black');
+            $(".navbottomstrip").css('background', 'white');
+            $(".copysec").css('background', 'black');
+            $(".footertext1").css('color', 'white');
+            $('.footertextbottom').removeClass('text-white');
+            $('.lastupdate').removeClass('footertext2').css({
+                'color': 'black',
+            });
+            $(".linksec").css('background', 'white');
+            $(".jactextnew").css('color', 'black');
+            $(".linktext").css('color', 'black');
+            $('.logo').addClass('grayscale');
+            //$(".government-text").css('color', 'white');
+            //$(".language-text").css('color', 'white');
+            //$(".volume-icon").css('color', 'white');
+            //$(".screen-text").css('color', 'white');
+            //$('.navbar').css('background', 'black');
+            //$('.nav-link i').css('color', 'white');
+            //$('#up').css('color', 'white');
+            //$('#down').css('color', 'white');
+            //$('#default').css('color', 'white');
+           
+        });
+
+        $('#whitebutton').on('click', function () {
+            //$(".bestviewtext").css('color', 'white');
+            //$(".government-text").css('color', 'white');
+            //$(".language-text").css('color', 'white');
+            //$(".volume-icon").css('color', 'white');
+            //$(".screen-text").css('color', 'white');
+            //$('.navbar').css('background', 'linear-gradient(90deg, #314755 21%, #26a0da 100%)');
+            $(".striptop").css('background', '#800000');
+            $(".bodydiv2").css('background', '#FFBC79');
+            $("#Label1").css('color', '#800000');
+            $(".address").css('color', '#800000');
+            $(".tag").css('color', '#800000');
+            $(".navbottomstrip").css('background', '#FFBC79');
+            $(".copysec").css('background', '#FFBC79');
+            $(".footertext1").css('color', 'black');
+            $('.footertextbottom').addClass('text-white');
+            $(".jac-link").css('color', 'white');
+            $(".jactextnew").css('color', '#FFBC79');
+            $(".linksec").css('background', '#800000');
+            $('.lastupdate').addClass('footertext2');
+            $(".linktext").css('color', '');
+            $('.logo').removeClass('grayscale');
+            //$('.nav-link i').css('color', 'white');
+            //$('#up').css('color', 'white');
+            //$('#down').css('color', 'white');
+            //$('#default').css('color', 'white');
+           
+        });
+
+    </script>
+</body>
+</html>

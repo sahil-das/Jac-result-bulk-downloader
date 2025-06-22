@@ -1,0 +1,600 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>
+	Home | Jharkhand Academic Council
+</title><link href="resources/css/bootstrap.min.css" rel="stylesheet" /><link href="resources/css/style.css" rel="stylesheet" /><link href="resources/css/responsive.css" rel="stylesheet" /><link href="resources/css/all.min.css" rel="stylesheet" /><link href="resources/css/fontawesome.min.css" rel="stylesheet" /><link href="resources/css/owl.carousel.min.css" rel="stylesheet" /><link href="resources/css/owl.theme.default.min.css" rel="stylesheet" /><link href="resources/css/lightbox.min.css" rel="stylesheet" /><link rel="apple-touch-icon" sizes="180x180" href="resources/images/logo2.png" /><link rel="icon" type="image/png" sizes="32x32" href="resources/images/logo2.png" /><link rel="icon" type="image/png" sizes="16x16" href="resources/images/logo2.png" /><link rel="manifest" href="resources/images/faviconn/site.webmanifest" /><meta name="msapplication-TileColor" content="#da532c" /><meta name="theme-color" content="#ffffff" /><meta http-equiv="X-XSS-Protection" content="1; mode=block" /><meta http-equiv="X-Content-Type-Options" content="nosniff" /><meta http-equiv="X-Frame-Options" content="DENY" />
+    <script src="resources/js/jquery.min.js"></script>
+    <script src="resources/js/bootstrap.bundle.min.js"></script>
+    <script src="resources/js/owl.carousel.js"></script>
+    <script src="resources/js/lightbox.min.js"></script>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(function () {
+            var height = $(window).height();
+            var width = $(window).width();
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $(".mainmenusec").addClass('headerbar');
+
+                }
+                else {
+                    $(".mainmenusec").removeClass('headerbar');
+                }
+
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            var owl = $('#banowl');
+            owl.owlCarousel({
+                margin: 10,
+                nav: true,
+                loop: true,
+                autoplay: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            })
+        })
+    </script>
+    <script>
+        $('#v1, #v2').owlCarousel({
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            items: 1,
+            nav: true,
+            animateOut: 'slideOutUp',
+            animateIn: 'slideInUp'
+        })
+    </script>
+    <script>
+        $('#blackButton').click(switchBlack);
+        $('#whiteButton').click(switchWhite);
+        function switchBlack() {
+            $('body').attr('class', 'black');
+        }
+
+        function switchWhite() {
+            $('body').attr('class', 'white');
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            var resize = new Array('.resizable');
+            resize = resize.join(',');
+
+            //resets the font size when "reset" is clicked
+            var resetFont = $(resize).css('font-size');
+            $(".reset").click(function () {
+                $(resize).css('font-size', resetFont);
+            });
+
+            //increases font size when "+" is clicked
+            $(".increase").click(function () {
+                var originalFontSize = $(resize).css('font-size');
+                var originalFontNumber = parseFloat(originalFontSize, 10);
+                var newFontSize = originalFontNumber * 1.2;
+                $(resize).css('font-size', newFontSize);
+                return false;
+            });
+
+            //decrease font size when "-" is clicked
+
+            $(".decrease").click(function () {
+                var originalFontSize = $(resize).css('font-size');
+                var originalFontNumber = parseFloat(originalFontSize, 10);
+                var newFontSize = originalFontNumber * 0.8;
+                $(resize).css('font-size', newFontSize);
+                return false;
+            });
+
+        });
+    </script>
+    <script>
+        $('#photogal').owlCarousel({
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 2
+                }
+            }
+        })
+    </script>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+    </style>
+    
+</head>
+<body>
+    <form method="post" action="./enter-class-x-2025-student-details" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="hZrZi1E62TFzAGuN0l5auS6npkZpSdoks9AOCV8RTc0Hae4ApCdLi/vdTaDfKDUUBbm6z/n5nNCffqTAvMftL59olgew35DWPJyQ3xQ87ZjAfkRv1IDRXeZ4KUAEUEssp1fkhwXFNR2w+rSAB8vfkc5bOXhiz7EFZ4tXadu9LaS/ZmZUqmnpz0h7eQilS8mN" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="7348C60D" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="nYDmIqTLjXWUztShR+xre45NmayerTIuj2vyvR59CjB/+urYqZWKPqWhgE6gCXn2LSRFsNh2SCQF9gOLQu1bIpgXTZ4ZkHux6vVTM6yLMIXa2UUYJbxPWTznEsTGaUXTRlBaplH84tHNQwkTvOeIxBpN2F4ijOt05EdED8m/KqT6Ro6WVvBHR0ElT2pZexYF" />
+        <nav class="topsec navbar navbar-expand-lg padding-nav padding-none striptop">
+            <div class="collapse navbar-collapse justify-space-between d-flex justify-space-between-md d-flex-md d-flex-sm" id="navbarSupportedContent">
+
+                <a class="uplogec d-flex gap-2 align-items-center" target="_blank" href="https://www.jharkhand.gov.in/">
+                     <img src="resources/images/Jharkhand_Rajakiya_Chihna.png" class="jac-logo">
+                    <h6 class="text-uppercase mb-lg-0 government-text" style=" color: white;margin-bottom:0px">Government
+                        of
+                        Jharkhand |
+                        Jharkhand Academic Council</h6>
+                </a>
+
+                <div class="form-inline my-2 my-lg-0">
+                    <ul class="gap-2 navbar-nav mr-auto">
+                        <li class="nav-item align-center d-flex ">
+                            <a class="nav-link link-dark screen-text" style="color:white" href="/">Skip to Main Content</a>
+                        </li>
+                        <li class="nav-item align-center d-flex ">
+                            <a class="nav-link link-dark screen-text"  href="screen-reader.html"><i class="fa fa-volume-up me-1 volume-icon" style="color: white;"></i>Screen Reader
+                                Access</a>
+                        </li>
+                        <li class="nav-item align-center d-flex ">
+                            <a class="nav-link bg-black text-white" style="padding-top: 4px; padding-bottom: 4px; display: block;" href="#" id="blackbutton">A
+                            </a>
+                            <a class="nav-link bg-white text-black" style="padding-top: 4px; padding-bottom: 4px; display: none;" href="#" id="whitebutton">A
+                            </a>
+                        </li>
+                        <li class="nav-item align-center d-flex">
+                            <a class="nav-link" href="#" id="up">A+</a>
+                            <a class="nav-link" href="#" id="down">A-</a>
+                            <a class="nav-link" href="#" id="default">A</a>
+                        </li>
+
+                        <li class="nav-item align-center d-flex">
+                            <a class="gap-1 d-flex nav-link link-dark screen-text" href="#">
+                                <i class="fa fa-language" style="font-size: 16px; transition: transform 0.3s;color:white"></i>
+                                <span id="language-text" style="color:white">English</span>
+                            </a>
+                        </li>
+                        <li class="nav-item align-center d-flex">
+                            <a class="nav-link" href="#" style="font-size: 15px;"><i class="fa-brands fa-square-facebook link-logo"></i></a>
+                            <a class="nav-link" href="#" style="font-size: 15px;"><i class="fa-brands fa-square-twitter link-logo"></i></a>
+                            <a class="nav-link" href="#" style="font-size: 15px;"><i class="fab fa-instagram link-logo"></i></a>
+                            <a class="nav-link" href="#" style="font-size: 15px;"><i class="fa-brands fa-square-youtube link-logo"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </nav>
+        <div class="bodydiv bodydiv2">
+            <div class="row mainrow">
+                <div class="col-md-2 col-sm-2 logocontain">
+                    <a href="/">
+                        <img src="resources/images/jac-logo-brown.png" class="logo width-logo-sm width-logo-xss width-logo-xs padd-12 pr-0" /></a>
+                </div>
+                <div class="col-md-8 col-sm-8 fullwidth">
+                    <div class="titlecontainer titlecontainer2 titlecontainer3">
+                        <h4 class="title title2 title3 title4">
+                            <span id="Label1">JHARKHAND ACADEMIC COUNCIL, RANCHI</span>
+                        </h4>
+                        <h5 class="address address2 address3 address4">
+                            <span id="lblheader1"> Gyandeep Campus, Bargawan, Namkum, Ranchi - 834010</span>
+                        </h5>
+                        <h5 class="tag tag2 tag3 tag4">
+                            <span id="lblheader2">Annual Secondary Examination -2025</span>
+                        </h5>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                </div>
+            </div>
+        </div>
+        <div>
+            <nav class="navbar navbar-expand-lg padding-nav striptop" style="background-color: #800000;">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                          
+                           
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div style="height: 5px; background-color: #FFBC79;" class="navbottomstrip"></div>
+        <div class="homeannounce pt-3 pb-4 bodycontainer bodycontainer2 bodycontainer3" style="margin-bottom:70px">
+            <div class="container">
+                
+
+    <div class="row">
+        <div class="offset-lg-1 col-lg-10 marks-padding-div">
+            <div class="card enter-details-card">
+                <div class="card-body enter-details-card-body">
+                    <div class="row enter-details-inner-row enter-details-inner-row2">
+                        <div class="enter-details-inner-contain enter-details-inner-contain2 enter-details-inner-contain3">
+                            <div class="row" style="border: 1px solid black;">
+                                <div class="col-md-7 pt-8px " style="border-right: 1px solid black;">
+                                    <h6 style="font-family: sans-serif; font-weight: 600;">ROLL CODE</h6>
+                                </div>
+                                <div class="col-md-5 pt-8px pb-16px">
+                                    <input name="ctl00$ContentPlaceHolder1$txt_code" type="text" id="ContentPlaceHolder1_txt_code" class="number-only" style="background-color: #FFEEDD; width: 100%;" />
+                                </div>
+                            </div>
+                            <div class="row" style="border: 1px solid black; border-top: 0px;">
+                                <div class="col-md-7" style="padding-top: 8px; border-right: 1px solid black;">
+                                    <h6 style="font-family: sans-serif; font-weight: 600;">ROLL NUMBER</h6>
+                                </div>
+                                <div class="col-md-5 pt-8px pb-16px">
+                                    <input name="ctl00$ContentPlaceHolder1$txt_no" type="text" id="ContentPlaceHolder1_txt_no" class="number-only" style="background-color: #FFEEDD; width: 100%;" />
+                                </div>
+                            </div>
+                            <div class="row" style="text-align: center; margin: 10px 0px; justify-content: center;">
+                                <div class="col-md-5">
+                                    <span id="captcha_display" style="display: block; font-weight: bold; background-color: #f0f0f0; padding: 7px; letter-spacing: 3px; font-family: monospace; font-size: 16px; user-select: none;">E7COSI</span>
+
+                                </div>
+                                <div class="col-md-1" style="margin-top: 7px;">
+                                    <span onclick="playCaptchaAudio()"><i class="fa fa-volume-up"></i></span>
+                                </div>
+                                <div class="col-md-6">
+                                    <button type="button" class="btn btn-sm btn-danger" onclick="generateCaptcha()"><i class="fa fa-refresh"></i>&nbsp;Refresh</button>
+
+                                </div>
+                            </div>
+                            <div class="row" style="justify-content: center;">
+                                <div class="col-md-6">
+                                    <input type="text" id="txt_captcha_input" class="form-control" placeholder="Enter CAPTCHA">
+                                </div>
+
+
+                            </div>
+                            <div class="row" style="margin-top: 65px;">
+                                <div class="col-md-12 flex justify-content-between">
+                                    <input type="submit" name="ctl00$ContentPlaceHolder1$btn_submit" value="Submit" id="ContentPlaceHolder1_btn_submit" class="submit-button submit-button2" />
+                                    <input type="submit" name="ctl00$ContentPlaceHolder1$btn_reset" value="Reset" id="ContentPlaceHolder1_btn_reset" class="reset-button" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let generatedCaptcha = '';
+
+        function generateCaptcha() {
+            const chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            generatedCaptcha = '';
+            for (let i = 0; i < 6; i++) {
+                generatedCaptcha += chars[Math.floor(Math.random() * chars.length)];
+            }
+            document.getElementById("captcha_display").textContent = generatedCaptcha;
+
+            document.getElementById("txt_captcha_input").value = '';
+            document.getElementById('ContentPlaceHolder1_btn_submit').disabled = true;
+        }
+
+        function validateCaptchaInput() {
+            const userCaptcha = document.getElementById("txt_captcha_input").value.trim();
+            const isValid = userCaptcha === generatedCaptcha;
+            document.getElementById('ContentPlaceHolder1_btn_submit').disabled = !isValid;
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            generateCaptcha(); 
+
+            document.getElementById("txt_captcha_input").addEventListener("keyup", validateCaptchaInput);
+
+
+        });
+        function playCaptchaAudio() {
+            if (!generatedCaptcha) {
+                alert("CAPTCHA not generated yet.");
+                return;
+            }
+
+            const utterance = new SpeechSynthesisUtterance(generatedCaptcha.split('').join(' '));
+            utterance.lang = 'en-US';
+            utterance.rate = 0.8; // Slower speed for clarity
+            window.speechSynthesis.speak(utterance);
+        }
+    </script>
+    <style>
+        .submit-button:disabled {
+            background-color: #cccccc !important; /* Light grey */
+            color: #666666 !important; /* Darker text */
+            cursor: not-allowed;
+            border-color: #999999 !important;
+            opacity: 0.7;
+        }
+    </style>
+
+            </div>
+        </div>
+        <footer>
+            <div class="copysec" style="background-color: #FFBC79;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <div class="mb-0">
+                                <h6 style="font-weight: 600;" class="footertext1">
+                                    Note : <a class="jac-link"
+                                        href="#" style="color:white">Jharkhand Academic Council</a>, Ranchi is not
+							responsible for any inadvertent error that may have crept in the results being published
+							on NET. The results published on net are for immediate information to the
+							examinees.These cannot be treated as original marksheets. Original marksheets have been
+							issued by the Council separately.</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="linksec pt-2 pb-2">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-8 col-sm-8">
+                        <h6 class="text-white mb-0 footertextbottom">
+                            Copyright © 2025. All Rights Reserved - <span class="text-dark jactext"><strong class="jactextnew">Jharkhand Academic
+                                    Council.</strong></span>
+                        </h6>
+                    </div>
+                    <div class="col-lg-6 col-md-4 col-sm-4 text-right">
+                        <ul class="list-inline mb-0 footinfo text-lg-end">
+                            <li class="list-inline-item "><a href="#" class="footertext2 lastupdate">Last Updated On : 27-05-2025 |
+                                    11:30</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </footer>
+    </form>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const numberInputs = document.querySelectorAll(".number-only");
+
+            numberInputs.forEach(input => {
+                input.addEventListener("input", function () {
+                    this.value = this.value.replace(/[^0-9]/g, '');
+                });
+            });
+        });
+        const languageText = document.getElementById('language-text');
+        const languageIcon = document.querySelector('.fa-language');
+
+
+        languageText.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            if (languageText.textContent.trim() === "English") {
+                languageText.textContent = "हिंदी";
+                languageIcon.style.transform = "scaleX(-1)";
+            } else {
+                languageText.textContent = "English";
+                languageIcon.style.transform = "scaleX(+1)";
+            }
+        });
+        function getSize() {
+            size = parseInt($("h5").css("font-size"), 10);
+            size2 = parseInt($("h2").css("font-size"), 10);
+            size3 = parseInt($("h3").css("font-size"), 10);
+            sizep = parseInt($("p").css("font-size"), 10);
+            size6 = parseInt($("h6").css("font-size"), 10);
+            sizespan = parseInt($("span").css("font-size"), 10);
+            sizeli = parseInt($("li").css("font-size"), 10);
+            sizea = parseInt($("li").css("font-size"), 10);
+            $("#font-size").text(size); // Example display
+        }
+
+        getSize();
+
+        let upClickCount = 0;
+        let downClickCount = 0;
+        const maxClicks = 3;
+
+        // Increase font size
+        $("#up").on("click", function () {
+            if (upClickCount < maxClicks) {
+                if ((size + 2) <= 50) {
+                    $("h5").css("font-size", "+=2");
+                    $("#font-size").text(size += 2);
+                }
+                if ((sizea + 2) <= 50) {
+                    $("a").css("font-size", "+=2");
+                    $("#font-size").text(sizea += 2);
+                }
+                if ((size2 + 2) <= 50) {
+                    $("h2").css("font-size", "+=2");
+                    $("#font-size").text(size2 += 2);
+                }
+                if ((size3 + 2) <= 50) {
+                    $("h3").css("font-size", "+=2");
+                    $("#font-size").text(size3 += 2);
+                }
+                if ((sizep + 2) <= 50) {
+                    $("p").css("font-size", "+=2");
+                    $("#font-size").text(sizep += 2);
+                }
+                if ((size6 + 2) <= 50) {
+                    $("h6").css("font-size", "+=2");
+                    $("#font-size").text(size6 += 2);
+                }
+                if ((sizespan + 2) <= 50) {
+                    $("span").css("font-size", "+=2");
+                    $("#font-size").text(sizespan += 2);
+                }
+                if ((sizeli + 2) <= 50) {
+                    $("li").css("font-size", "+=2");
+                    $("#font-size").text(sizeli += 2);
+                }
+
+                upClickCount++;
+                if (upClickCount >= maxClicks) {
+                    $("#up").prop("disabled", true);
+                }
+            }
+        });
+
+        // Decrease font size
+        $("#down").on("click", function () {
+            if (downClickCount < maxClicks) {
+                if ((size - 2) >= 12) {
+                    $("h5").css("font-size", "-=2");
+                    $("#font-size").text(size -= 2);
+                }
+                if ((sizea - 2) >= 12) {
+                    $("a").css("font-size", "-=2");
+                    $("#font-size").text(sizea -= 2);
+                }
+                if ((size2 - 2) >= 12) {
+                    $("h2").css("font-size", "-=2");
+                    $("#font-size").text(size2 -= 2);
+                }
+                if ((size3 - 2) >= 12) {
+                    $("h3").css("font-size", "-=2");
+                    $("#font-size").text(size3 -= 2);
+                }
+                if ((sizep - 2) >= 12) {
+                    $("p").css("font-size", "-=2");
+                    $("#font-size").text(sizep -= 2);
+                }
+                if ((size6 - 2) >= 12) {
+                    $("h6").css("font-size", "-=2");
+                    $("#font-size").text(size6 -= 2);
+                }
+                if ((sizespan - 2) >= 12) {
+                    $("span").css("font-size", "-=2");
+                    $("#font-size").text(sizespan -= 2);
+                }
+                if ((sizeli - 2) >= 12) {
+                    $("li").css("font-size", "-=2");
+                    $("#font-size").text(sizeli -= 2);
+                }
+
+                downClickCount++;
+                if (downClickCount >= maxClicks) {
+                    $("#down").prop("disabled", true);
+                }
+            }
+        });
+
+        // Reset to default
+        $("#default").on("click", function () {
+            $("h5, h2, h6, span, li, a, p").css("font-size", "");
+            $("#font-size").text("Reset to default sizes");
+
+            // Reset click counts and enable buttons
+            upClickCount = 0;
+            downClickCount = 0;
+            $("#up, #down").prop("disabled", false);
+        });
+        const blackButton = document.getElementById('blackbutton');
+        const whiteButton = document.getElementById('whitebutton');
+
+        blackButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            blackButton.style.display = 'none';
+            whiteButton.style.display = 'block';
+        });
+
+        whiteButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            whiteButton.style.display = 'none';
+            blackButton.style.display = 'block';
+        });
+        $('#blackbutton').on('click', function () {
+            $(".striptop").css('background', 'black');
+            $(".bodydiv2").css('background', 'white');
+            $("#Label1").css('color', 'black');
+            $(".address").css('color', 'black');
+            $(".tag").css('color', 'black');
+            $(".navbottomstrip").css('background', 'white');
+            $(".copysec").css('background', 'black');
+            $(".footertext1").css('color', 'white');
+            $('.footertextbottom').removeClass('text-white');
+            $('.lastupdate').removeClass('footertext2').css({
+                'color': 'black',
+            });
+            $(".linksec").css('background', 'white');
+            $(".jactextnew").css('color', 'black');
+            $(".linktext").css('color', 'black');
+            $('.logo').addClass('grayscale');
+            //$(".government-text").css('color', 'white');
+            //$(".language-text").css('color', 'white');
+            //$(".volume-icon").css('color', 'white');
+            //$(".screen-text").css('color', 'white');
+            //$('.navbar').css('background', 'black');
+            //$('.nav-link i').css('color', 'white');
+            //$('#up').css('color', 'white');
+            //$('#down').css('color', 'white');
+            //$('#default').css('color', 'white');
+           
+        });
+
+        $('#whitebutton').on('click', function () {
+            //$(".bestviewtext").css('color', 'white');
+            //$(".government-text").css('color', 'white');
+            //$(".language-text").css('color', 'white');
+            //$(".volume-icon").css('color', 'white');
+            //$(".screen-text").css('color', 'white');
+            //$('.navbar').css('background', 'linear-gradient(90deg, #314755 21%, #26a0da 100%)');
+            $(".striptop").css('background', '#800000');
+            $(".bodydiv2").css('background', '#FFBC79');
+            $("#Label1").css('color', '#800000');
+            $(".address").css('color', '#800000');
+            $(".tag").css('color', '#800000');
+            $(".navbottomstrip").css('background', '#FFBC79');
+            $(".copysec").css('background', '#FFBC79');
+            $(".footertext1").css('color', 'black');
+            $('.footertextbottom').addClass('text-white');
+            $(".jac-link").css('color', 'white');
+            $(".jactextnew").css('color', '#FFBC79');
+            $(".linksec").css('background', '#800000');
+            $('.lastupdate').addClass('footertext2');
+            $(".linktext").css('color', '');
+            $('.logo').removeClass('grayscale');
+            //$('.nav-link i').css('color', 'white');
+            //$('#up').css('color', 'white');
+            //$('#down').css('color', 'white');
+            //$('#default').css('color', 'white');
+           
+        });
+
+    </script>
+</body>
+</html>
